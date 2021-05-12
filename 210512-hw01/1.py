@@ -9,9 +9,9 @@ for i in aws.rows:
     salary = i[1].value
     tot += salary
 
-last_ros = len(tuple(aws.rows))+1
-aws.cell(row = last_ros, column = 1).value = "평균"
-aws.cell(row = last_ros, column = 2).value = tot / len(tuple(aws.rows))
+last_rows = len(tuple(aws.rows))+1
+aws.cell(row = last_rows, column = 1).value = "평균"
+aws.cell(row = last_rows, column = 2).value = tot / len(tuple(aws.rows))
 
 
 exf.save('c:\\dd\\itxout.xlsx')
