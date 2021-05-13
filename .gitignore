@@ -164,4 +164,8 @@ Thumbs.db
 .history
 .ionide
 
+### MYSQL PW ###
+210513-hw01/DB_PASSWORD
+
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
