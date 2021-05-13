@@ -158,6 +158,7 @@ Thumbs.db
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
+210513-hw01/.vscode
 
 ### VisualStudioCode Patch ###
 # Ignore all local history of files
