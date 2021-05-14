@@ -48,7 +48,6 @@ rows = c.fetchall()
 for i in rows:
     print(i)
 
-
 con.commit()
 c.close()
 con.close()
