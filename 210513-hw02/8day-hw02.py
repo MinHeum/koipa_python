@@ -31,6 +31,23 @@ c.execute('update movie set actor = "김혜수" where title = "도둑들"')
 # 광해를 삭제하시오. delete
 c.execute('delete from movie where title = "광해"')
 
+# Mydb 연결, Man table 생성
+c.execute('drop table if exists man')
+c.execute('create table man(name char(10),age int)')
+# insert 할 데이터 선언
+lst_men = ["김연아/32","손흥민/30","이강인/21"]
+for i in lst_men:
+    line = i.split("/")
+    # insert 쿼리문
+    sql = """
+        insert into man(name,age) values (%s,%s)"""
+    c.execute(sql,(line[0],line[1]))
+# select문으로 db에 작성되었는지 확인
+c.execute("select * from man")
+rows = c.fetchall()
+for i in rows:
+    print(i)
+
 
 con.commit()
 c.close()
